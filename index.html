@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <span class="material-icons-outlined">expand_more</span>
+      <span>Now Playing</span>
+      <span class="material-icons-outlined">more_horiz</span>
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name">RiseUp - TheFatRat</p>
+      <p class="artist">TheFatRat</p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <span></span>
+      </div>
+      <div class="timer">
+        <span class="current">0:00</span>
+        <span class="duration"></span>
+      </div>
+      <audio id="play-audio" src=""></audio>
+    </div>
+    <div class="controls">
+      <span id="repeat-plist" title="Lặp lại" class="material-icons-outlined">repeat</span>
+      <span id="prev" class="material-icons-outlined">skip_previous</span>
+      <div id="" class="play-pause">
+        <span class="material-icons-outlined">play_circle</span>
+        <!-- <span class="material-icons-outlined">pause_circle</span> -->
+      </div>
+      <span id="next" class="material-icons-outlined">skip_next</span>
+      <span id="music-random" title="Phát ngẫu nhiên" class="material-icons-outlined">shuffle</span>
+    </div>
+  </div>
+  <div class="music-list">
+    <div class="header">
+      <div class="row">
+        <span id="more-music" class="material-icons-outlined">queue_music</span>
+        <span id="header-music-list">Music list</span>
+      </div>
+      <span id="close" class="material-icons-outlined">close</span>
+    </div>
+    <ul>
+
+    </ul>
+  </div>
+  <script src="./music-list.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
